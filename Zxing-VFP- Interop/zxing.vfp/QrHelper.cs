@@ -46,9 +46,7 @@ namespace zxing.vfp
                 throw;
             }
 
-
             return imagenQr;
-
         }
 
 

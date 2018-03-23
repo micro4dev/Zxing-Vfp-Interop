@@ -1,0 +1,15 @@
+SET STEP ON
+
+LOCAL zxing
+zxing = CREATEOBJECT("zxing.QrHelper")
+
+
+LOCAL datosQr
+datosQr = "20542754126|03|B001|00000016|1525.42|10000.00|2018-02-07|1|VISA SONCCO JESUS ANGEL|46795470|"
+
+LOCAL imagenQr 
+imagenQr  = zxing.GenerateQr(300,300,datosQr)
+
+IF FILE(imagenQr)
+	WAIT WINDOW FULLPATH(imagenQr)
+ENDIF 
