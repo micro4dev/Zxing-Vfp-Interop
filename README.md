@@ -30,6 +30,6 @@ LOCAL imagenQr
 imagenQr  = zxing.GenerateQr(300,300,datosQr)
 
 IF FILE(imagenQr)
-	WAIT WINDOW FULLPATH(imagenQr)
+WAIT WINDOW FULLPATH(imagenQr)
 ENDIF 
 
